@@ -1,9 +1,30 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.IO;
 using UnityEngine;
 
 public class ModIO{
+
+    public struct ModDefinition{
+        public ModDefinition(string name, string serialisedData, object objectRef){
+            Name = name;
+            SerialisedData = serialisedData;
+            ObjectRef = objectRef;
+        }
+        
+        public string Name{ get; }
+        public string SerialisedData{ get; }
+        public object ObjectRef{ get; }
+    }
+    
+    public struct ModdableField{
+        public ModdableField(string name, object objectRef){
+            Name = name;
+            ObjectRef = objectRef;
+        }
+        
+        public string Name{ get; }
+        public object ObjectRef{ get; }
+    }
     
     private Dictionary<string, bool> ModTypes = new Dictionary<string, bool>(){
         { "FloatVariable", true },
@@ -25,10 +46,17 @@ public class ModIO{
             return "";
         }
     }
+
+    public void WriteFile(string exportPath, string serialisedObj){
+        File.WriteAllText(exportPath, serialisedObj);
+    }
+
+    public void OverwriteModFieldWithMod(string serialisedData, object objectToOverwrite){
+        JsonUtility.FromJsonOverwrite(serialisedData, objectToOverwrite);
+    }
     
-    // Deserialize the JSON data 
-    //  into a pattern matching the GameData class.
-    //JsonUtility.FromJsonOverwrite(fileContents, cubeTranslationData);
-    //return true;
+    public string TransformToJSON(object obj){
+        return JsonUtility.ToJson(obj);
+    }
     
 }

@@ -5,16 +5,16 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638203863340854653
-    m_Hash: 537383198
+      ticks: 638212499000025980
+    m_Hash: 3349796568
   m_LockFileStatus:
     m_FilePath: C:/Users/nicho/TestingSOs/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638203863340875839
-    m_Hash: 395352647
+      ticks: 638212499000053070
+    m_Hash: 1268554227
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_LocalPackages:
@@ -210,7 +210,7 @@ m_ResolvedPackages:
   - name: com.unity.modules.jsonserialize
     version: 1.0.0
   - name: com.unity.ide.rider
-    version: 3.0.21
+    version: 3.0.22
   - name: com.unity.ide.vscode
     version: 1.2.5
   - name: com.unity.editorcoroutines
@@ -243,12 +243,12 @@ m_ResolvedPackages:
   unityLifecycle:
     version: 1.0.1
     nextVersion: 
-- packageId: com.unity.ide.rider@3.0.21
+- packageId: com.unity.ide.rider@3.0.22
   testable: 0
   isDirectDependency: 1
-  version: 3.0.21
+  version: 3.0.22
   source: 1
-  resolvedPath: C:\Users\nicho\TestingSOs\Library\PackageCache\com.unity.ide.rider@3.0.21
+  resolvedPath: C:\Users\nicho\TestingSOs\Library\PackageCache\com.unity.ide.rider@3.0.22
   assetPath: Packages/com.unity.ide.rider
   name: com.unity.ide.rider
   displayName: JetBrains Rider Editor
@@ -301,11 +301,13 @@ m_ResolvedPackages:
     - 3.0.18
     - 3.0.20
     - 3.0.21
+    - 3.0.22
     compatible:
     - 3.0.18
     - 3.0.20
     - 3.0.21
-    verified: 3.0.21
+    - 3.0.22
+    verified: 3.0.22
   dependencies:
   - name: com.unity.ext.nunit
     version: 1.0.6
@@ -323,13 +325,13 @@ m_ResolvedPackages:
     configSource: 0
   hideInEditor: 0
   isAssetStorePackage: 0
-  datePublishedTicks: 638175749180000000
+  datePublishedTicks: 638211305930000000
   documentationUrl: https://docs.unity3d.com/Packages/com.unity.ide.rider@3.0/manual/index.html
   hasRepository: 1
   repository:
     type: git
     url: https://github.cds.internal.unity3d.com/unity/com.unity.ide.rider.git
-    revision: bb7732dcafe867368246b7661dda05368b74dd8e
+    revision: 1f4f2178384a8da373435c9912afcca7d6bb823a
     path: 
   unityLifecycle:
     version: 3.0.18
@@ -3082,10 +3084,12 @@ m_ResolvedPackages:
     - 1.2.1
     - 1.2.2
     - 1.2.3
+    - 1.2.4
     compatible:
     - 1.2.2
     - 1.2.3
-    verified: 1.2.3
+    - 1.2.4
+    verified: 1.2.4
   dependencies:
   - name: com.unity.test-framework
     version: 1.0.16

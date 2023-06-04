@@ -9,8 +9,4 @@ public class CubeMove : Mod{
     void Update(){
         transform.position = Vector3.zero + transform.right * Mathf.Sin(Time.time * translationSpeed.Value);
     }
-    
-    void CheckAndApplyMods(){
-        
-    }
 }
